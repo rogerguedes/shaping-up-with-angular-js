@@ -126,4 +126,10 @@
 			"templateUrl": "product-description.html"
 		};
 	});
+	app.directive('productSpecs', function(){
+		return {
+			"restrict": "A",
+			"templateUrl": "product-specs.html"
+		};
+	});
 })();
