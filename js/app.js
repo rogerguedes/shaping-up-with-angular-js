@@ -114,4 +114,16 @@
 			this.review = {};
 		};
 	});
+	app.directive('productTitle', function(){
+		return {
+			"restrict": "E",
+			"templateUrl": "product-title.html"
+		};
+	});
+	app.directive('productDescription', function(){
+		return {
+			"restrict": "E",
+			"templateUrl": "product-description.html"
+		};
+	});
 })();
