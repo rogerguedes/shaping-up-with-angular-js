@@ -32,16 +32,7 @@
 				<!-- Product Title -->
 				<product-title></product-title>
 				<!-- Image Gallery  -->
-				<div class="gallery" ng-show="{{product.images.length > 0}}" ng-controller="GalleryController as gallery">
-					<div class="img-wrap">
-						<img ng-src="{{product.images[gallery.current]}}" />
-					</div>
-					<ul class="img-thumbnails clearfix">
-						<li class="small-image pull-left thumbnail" ng-repeat="(imagekey, imageValue) in product.images" ng-click="gallery.setCurrent(imagekey)">
-							<img ng-src="{{imageValue}}" />
-						</li>
-					</ul>
-				</div>
+				<product-gallery></product-gallery>
 				<!-- Information Tabs -->
 				<product-tabs></product-tabs>
 			</div>
